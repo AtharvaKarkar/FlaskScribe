@@ -1,7 +1,7 @@
 from flask import Blueprint  # blueprint is a way to organize and structure a web application into reusable components
 
 
-views = Blueprints('views',__name__) # defining a blue print
+views = Blueprint('views',__name__) # defining a blue print
 
 @views.route('/')
 def home():
